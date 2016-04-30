@@ -3,4 +3,13 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="menu_header">Book it to the moon</string>
+    <string name="locate_buttom">Localize the moon</string>
+    <string name="information_buttom">Information</string>
+    <string name="galery_buttom">Galery</string>
+    <string name="favourites_buttom">Favourites</string>
+    <string name="options_buttom">Options</string>
+
+
+
 </resources>
