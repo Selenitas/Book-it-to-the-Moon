@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".MoonHistoryActivity" />
-        <activity android:name=".InformationActivity"></activity>
+        <activity android:name=".information.MoonHistoryActivity" />
+        <activity android:name=".information.InformationActivity"></activity>
     </application>
 
 </manifest>
