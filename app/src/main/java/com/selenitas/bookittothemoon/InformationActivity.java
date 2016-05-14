@@ -3,7 +3,7 @@ package com.selenitas.bookittothemoon;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class InformationActivity extends AppCompatActivity implements {
+public class InformationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
