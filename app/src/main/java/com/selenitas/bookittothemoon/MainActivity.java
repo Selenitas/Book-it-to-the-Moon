@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Map
+        // Map buttons
         this.btnInformation = (Button) findViewById(R.id.information_buttom);
         // Clicks
         clickButtonAceptar();
