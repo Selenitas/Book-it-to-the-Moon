@@ -25,7 +25,7 @@ public class InformationActivity extends AppCompatActivity {
         this.btnBack = (Button) findViewById(R.id.back_button);
         // Calls
         clickBtn(this.btnHistory, new MoonHistoryActivity());
-        clickBtn(this.btnFunnyFacts, new MainActivity());
+        clickBtn(this.btnFunnyFacts, new FunnyFactsActivity());
         clickBtn(this.btnBack, new MainActivity());
     }
 
