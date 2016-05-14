@@ -6,7 +6,7 @@
     <string name="menu_header">Book it to the moon</string>
     <string name="locate_buttom">Localize the moon</string>
     <string name="information_buttom">Information</string>
-    <string name="galery_buttom">Galery</string>
+    <string name="galery_buttom">Gallery</string>
     <string name="favourites_buttom">Favourites</string>
     <string name="options_buttom">Options</string>
     <string name="back_buttom">Back</string>
@@ -19,6 +19,5 @@
         They eventually melted together, cooled down and became the Moon.
         For another 500 million years pieces of rock kept striking aginst the surface of the Moon
     </string>
-
     <string name="moon_history_header">Moon History</string>
 </resources>

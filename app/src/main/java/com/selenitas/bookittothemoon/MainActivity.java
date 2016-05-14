@@ -6,24 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.selenitas.bookittothemoon.gallery.GalleryActivity;
 import com.selenitas.bookittothemoon.information.InformationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnLocalizeTheMoon;
     private Button btnInformation;
-    private Button btnGallery;
     private Button btnFavourites;
     private Button btnOptions;
+    private Button btnGallery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Map buttons
         this.btnInformation = (Button) findViewById(R.id.information_buttom);
+        this.btnGallery = (Button) findViewById(R.id.galery_button);
         // Clicks
         clickButtonAceptar();
+        clickButtonGallery();
+
     }
 
     // Controllers
@@ -36,4 +41,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void clickButtonGallery() {
+        this.btnGallery.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }
