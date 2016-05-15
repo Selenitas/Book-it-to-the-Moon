@@ -2,10 +2,12 @@ package com.selenitas.bookittothemoon;
 
 import android.content.ComponentName;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.selenitas.bookittothemoon.gallery.GalleryActivity;
 import com.selenitas.bookittothemoon.information.InformationActivity;
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnFavourites;
     private Button btnOptions;
     private Button btnGallery;
+    private TextView txtView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         this.btnInformation = (Button) findViewById(R.id.information_buttom);
         this.btnGallery = (Button) findViewById(R.id.galery_button);
         this.btnLocalizeTheMoon = (Button) findViewById(R.id.galery_button);
+        this.txtView = (TextView) findViewById(R.id.textView);
+        this.txtView.setTextColor(Color.WHITE);
         // Clicks
         clickButtonAceptar();
         clickButtonGallery();
