@@ -1,5 +1,6 @@
 package com.selenitas.bookittothemoon;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         // Map buttons
         this.btnInformation = (Button) findViewById(R.id.information_buttom);
         this.btnGallery = (Button) findViewById(R.id.galery_button);
+        this.btnLocalizeTheMoon = (Button) findViewById(R.id.galery_button);
         // Clicks
         clickButtonAceptar();
         clickButtonGallery();
+        clickButtonLocalize();
 
     }
 
@@ -46,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
         this.btnGallery.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void clickButtonLocalize() {
+        this.btnLocalizeTheMoon.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(ComponentName.unflattenFromString("com.selenitas.vuforia"));
+                intent.addCategory(Intent.CATEGORY_LAUNCHER);
                 startActivity(intent);
             }
         });
