@@ -1,0 +1,57 @@
+<!DOCTYPE Html>
+<html>
+<head>
+  <title>GALLERY</title>
+  <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet" />
+  <script type="text/javascript"  src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Moon Gallery</h1>
+      <h3><small>Explore fascinating moon pictures</small></h3>
+    </div>
+    <div class="list-group">
+      <a href="../gallery/apollo.html" class="list-group-item list-group-item-info">
+        <h4 class="list-group-item-heading">Apollo Mission</h4>
+        <p class="list-group-item-text">Amazing pictures from taken from Apollo missions. Explore through hundred of the pictures taken from the missions that put a man in the moon</p>
+      </a>
+      <a href="../gallery/nasa.html" class="list-group-item">
+        <h4 class="list-group-item-heading">NASA Gallery</h4>
+        <p class="list-group-item-text">Thousands of the most beautiful pictures from the NASA gallery</p>
+      </a>
+      <a href="../gallery/celestials.html" class="list-group-item list-group-item-info">
+        <h4 class="list-group-item-heading">Other celestial Bodies</h4>
+        <p class="list-group-item-text">Our universe is big and fascinating, get pictures from around the web with stunning images from our big universe</p>
+      </a>
+      <a href="../gallery/phases.html" class="list-group-item">
+        <h4 class="list-group-item-heading">Lunar Phases</h4>
+        <p class="list-group-item-text">Compare the lunar phases and cycle through the month</p>
+      </a>
+      <a href="../gallery/other.html" class="list-group-item list-group-item-info">
+        <h4 class="list-group-item-heading">Other sources pictures</h4>
+        <p class="list-group-item-text">Explore pictures that any people can take to show us how beautiful is the moon</p>
+      </a>
+    </div>
+
+  </div>
+
+  <b>API URL:</b>
+  <pre id="reqObject"></pre>
+
+
+  <img id="apod_img_id" width="250px"/>
+
+  <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+  <p id="copyright"></p>
+
+  <h3 id="apod_title"></h3>
+  <p id="apod_explaination"></p>
+  <br/>
+
+
+</body>
+</html>
