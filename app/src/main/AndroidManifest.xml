@@ -20,9 +20,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".information.MoonHistoryActivity" />
-        <activity android:name=".information.InformationActivity" />
-        <activity android:name=".information.FunnyFactsActivity"></activity>
+        <activity
+            android:name=".information.InformationActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".information.MoonHistoryActivity"
+            android:parentActivityName=".information.InformationActivity"/>
+        <activity
+            android:name=".information.FunnyFactsActivity"
+            android:parentActivityName=".information.InformationActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -26,7 +26,7 @@ public class InformationActivity extends AppCompatActivity {
         // Calls
         clickBtn(this.btnHistory, new MoonHistoryActivity());
         clickBtn(this.btnFunnyFacts, new FunnyFactsActivity());
-        clickBtn(this.btnBack, new MainActivity());
+        clickBtnBack(this.btnBack);
     }
 
     public void clickBtn(Button btn, final Object object){
@@ -35,6 +35,15 @@ public class InformationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(InformationActivity.this, object.getClass());
                 startActivity(intent);
+            }
+        });
+    }
+
+    public void clickBtnBack(Button btn){
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateUpToFromChild(InformationActivity.this, getParentActivityIntent());
             }
         });
     }

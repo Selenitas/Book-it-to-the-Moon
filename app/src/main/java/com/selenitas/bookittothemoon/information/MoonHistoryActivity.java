@@ -20,15 +20,14 @@ public class MoonHistoryActivity extends AppCompatActivity {
         // Map Button
         this.btnBack = (Button) findViewById(R.id.back_info_button);
         // Clicks
-        clickBtn(this.btnBack, new InformationActivity());
+        clickBtnBack(this.btnBack);
     }
 
-    public void clickBtn(Button btn, final Object object){
+    public void clickBtnBack(Button btn){
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MoonHistoryActivity.this, object.getClass());
-                startActivity(intent);
+                navigateUpToFromChild(MoonHistoryActivity.this, getParentActivityIntent());
             }
         });
     }
