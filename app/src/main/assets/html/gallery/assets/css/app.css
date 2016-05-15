@@ -1,0 +1,18 @@
+body {
+    background-image: url('../img/space-bg.png');
+    background-size: 300px;
+}
+
+.page-header {
+  color: white;
+  background: linear-gradient(45deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+  border-radius: 10px;
+}
+
+.page-header > h1 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-top: 10px;
+}
+
