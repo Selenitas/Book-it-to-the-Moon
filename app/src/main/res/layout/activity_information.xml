@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context=".information.InformationActivity">
+    tools:context=".information.InformationActivity"
+    android:background="@drawable/space_bg">
 
     <TextView
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:fontFamily="cursive"
         android:textAlignment="center"
         android:textSize="75dp"
+        android:background="@color/black_overlay"
         />
 
     <Button
