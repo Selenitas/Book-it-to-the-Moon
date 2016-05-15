@@ -3,11 +3,112 @@
 <head>
     <title>PHASES</title>
     <link href="http://bootswatch.com/cerulean/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/app.css" rel="stylesheet"/>
     <script type="text/javascript"  src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./assets/js/app.js"></script>
 </head>
 <body>
+
+
+<div class="container">
+    <div class="page-header">
+        <h1>Lunar Phases Gallery</h1>
+    </div>
+</div>
+
+
+<div class="col-xs-12" >
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Howling_at_the_Moon_in_Mississauga.jpg" width="100%">
+                <div class="carousel-caption">
+Full moon                </div>
+            </div>
+            <div class="item">
+                <img src="http://stars.astro.illinois.edu/moon/gb1016.jpg" width="100%">
+                <div class="carousel-caption">
+                    Waxing Gibous moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://fullmoonphases.com/wp-content/uploads/2012/05/First-Quarter-Moon.jpg?9991b8" width="100%">
+                <div class="carousel-caption">
+                    First Quarter moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://journeytothestars.files.wordpress.com/2010/09/waxing-crescent-moon.jpg" width="100%">
+                <div class="carousel-caption">
+                    Waxing crescent moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2013/07/08/usno_moonphasenew.jpg.CROP.original-original.jpg" width="100%">
+                <div class="carousel-caption">
+                    New moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://c1.staticflickr.com/3/2924/14448498476_b2bd0e5862_b.jpg" width="100%">
+                <div class="carousel-caption">
+                    Waning crescent moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.universetoday.com/wp-content/uploads/2010/06/Flying-Across-the-Moon1.jpg" width="100%">
+                <div class="carousel-caption">
+                    Third quarter moon
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://fullmoonphases.com/wp-content/uploads/2012/05/Waning-Gibbous-Moon.jpg?9991b8" width="100%">
+                <div class="carousel-caption">
+                    Waning Gibbous moon
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="..." style="padding-top: 10px;">
+    <div class="btn-group" role="group">
+        <a href="../gallery/index.html">
+            <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-chevron-left"></span> Go Back</button>
+        </a>
+    </div>
+    <div class="btn-group" role="group">
+        <a onclick="saveImage()">
+            <button type="button" class="btn btn-info">Save <span class="glyphicon glyphicon-heart"></span> </button>
+        </a>
+    </div>
+</div>
+<script type="text/javascript">
+    function saveImage() {
+        var $origin = 'Lunar Phases Gallery';
+        var $description = $('.item.active > .carousel-caption').html().trim();
+        var $url = $('.item.active > img').attr('src');
+        var params = $origin + '\t' + $description + '\t' + $url;
+        Android.savedImageToFavourites(params);
+    }
+</script>
+
+
+
 
 </body>
 </html>
