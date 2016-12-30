@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.selenitas.bookittothemoon.gallery.GalleryActivity;
 import com.selenitas.bookittothemoon.information.InformationActivity;
@@ -61,13 +60,8 @@ public class MainActivity extends AppCompatActivity {
     public void clickButtonLocalize() {
         this.btnLocalizeTheMoon.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.selenitas.locateTheMoon");
-                if (launchIntent != null) {
-                    startActivity(launchIntent);//null pointer check in case package name was not found
-                }
-                else{
-                    Toast.makeText(getParent(), "You have to install the Locate The Moon.", Toast.LENGTH_LONG).show();
-                }
+                Intent launchIntent = new Intent(MainActivity.this, UnityPlayerNativeActivity.class);
+                startActivity(launchIntent);
             }
         });
     }
